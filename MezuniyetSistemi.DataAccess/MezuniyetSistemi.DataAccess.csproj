@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\" />
-    <Folder Include="DTOs\" />
+    <Folder Include="Abstract\" />
+    <Folder Include="Concrete\EntityFramework\Contexts\" />
+    <Folder Include="Concrete\EntityFramework\Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\MezuniyetSistemi.Entities\MezuniyetSistemi.Entities.csproj" />
   </ItemGroup>
 
 </Project>

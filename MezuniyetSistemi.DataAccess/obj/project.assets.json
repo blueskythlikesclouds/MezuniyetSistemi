@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/Core.dll": {}
         }
+      },
+      "MezuniyetSistemi.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MezuniyetSistemi.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MezuniyetSistemi.Entities.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../Core/Core.csproj",
       "msbuildProject": "../Core/Core.csproj"
+    },
+    "MezuniyetSistemi.Entities/1.0.0": {
+      "type": "project",
+      "path": "../MezuniyetSistemi.Entities/MezuniyetSistemi.Entities.csproj",
+      "msbuildProject": "../MezuniyetSistemi.Entities/MezuniyetSistemi.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Core >= 1.0.0"
+      "Core >= 1.0.0",
+      "MezuniyetSistemi.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -33,11 +52,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj",
-      "projectName": "MezuniyetSistemi.Entities",
-      "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\MezuniyetSistemi.DataAccess.csproj",
+      "projectName": "MezuniyetSistemi.DataAccess",
+      "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\MezuniyetSistemi.DataAccess.csproj",
       "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\obj\\",
+      "outputPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"
@@ -61,6 +80,9 @@
           "projectReferences": {
             "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\Core\\Core.csproj": {
               "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\Core\\Core.csproj"
+            },
+            "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj": {
+              "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj"
             }
           }
         }
