@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MezuniyetSistemi.Business.Abstract;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MezuniyetSistemi.API.Controllers
@@ -7,5 +8,14 @@ namespace MezuniyetSistemi.API.Controllers
     [ApiController]
     public class ProfilesController : ControllerBase
     {
+        private readonly IProfileService _profileService;
+
+        public ProfilesController(IProfileService profileService)
+        {
+            _profileService = profileService;
+        }
+
+
+
     }
 }
