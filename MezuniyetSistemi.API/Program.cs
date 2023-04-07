@@ -1,8 +1,16 @@
+using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddDbContext<MezuniyetSistemiContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MezuniyetSistemi"),
+        a=> a.MigrationsAssembly("MezuniyetSistemi.API"));
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

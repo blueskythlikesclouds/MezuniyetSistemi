@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="Concrete\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\MezuniyetSistemi.DataAccess\MezuniyetSistemi.DataAccess.csproj" />
     <ProjectReference Include="..\MezuniyetSistemi.Entities\MezuniyetSistemi.Entities.csproj" />
   </ItemGroup>
