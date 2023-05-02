@@ -21,11 +21,13 @@ namespace MezuniyetSistemi.Business.Concrete
         public void Add(Profile profile)
         {
             UnitOfWork.Profiles.Add(profile);
+            UnitOfWork.Save();
         }
 
         public void Delete(Profile profile)
         {
             UnitOfWork.Profiles.Delete(profile);
+            UnitOfWork.Save();
         }
 
         public IList<Profile> FindAll(bool trackChanges)
@@ -41,6 +43,7 @@ namespace MezuniyetSistemi.Business.Concrete
         public void Update(Profile profile)
         {
             UnitOfWork.Profiles.Update(profile);
+            UnitOfWork.Save();
         }
     }
 }
