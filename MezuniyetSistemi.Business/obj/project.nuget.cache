@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6VgNTi5JYsN1AanCJIhfA8C8clRu0wbVmSp0qWtREhX9xIS+j73KHwkQ00tbJMESRBsBeW6jYD/v1rTbG1jf6w==",
+  "dgSpecHash": "Gp398hrM9f5ikyWADspZcJONl38vL+8qIgTrDkC+tS7dbea4orH0Kos+xDXz90BwS2nEqZxANrgS2EJ2rki7Pw==",
   "success": true,
   "projectFilePath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Business\\MezuniyetSistemi.Business.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,8 @@
     "C:\\Users\\np_ba\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\np_ba\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\np_ba\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\np_ba\\.nuget\\packages\\nlog\\5.1.3\\nlog.5.1.3.nupkg.sha512",
+    "C:\\Users\\np_ba\\.nuget\\packages\\nlog.extensions.logging\\5.2.3\\nlog.extensions.logging.5.2.3.nupkg.sha512",
     "C:\\Users\\np_ba\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\np_ba\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\np_ba\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

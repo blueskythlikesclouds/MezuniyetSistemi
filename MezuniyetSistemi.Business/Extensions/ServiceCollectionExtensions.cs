@@ -24,6 +24,8 @@ namespace MezuniyetSistemi.Business.Extensions
 
             services.AddScoped<IProfileService, ProfileManager>();
 
+            services.AddSingleton<ILoggerService, LoggerManager>();
+
             return services;
         }
     }

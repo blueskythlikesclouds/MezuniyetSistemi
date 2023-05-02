@@ -7,8 +7,11 @@ using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Repositories;
 using MezuniyetSistemi.Business.Extensions;
 using Microsoft.EntityFrameworkCore;
 using MezuniyetSistemi.Business.Utilities.AutoMapper.Profiles;
+using NLog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+LogManager.LoadConfiguration(Path.Combine(Directory.GetCurrentDirectory(), "nLog.config"));
 
 // Add services to the container.
 

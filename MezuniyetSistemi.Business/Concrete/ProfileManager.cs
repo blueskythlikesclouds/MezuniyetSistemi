@@ -16,11 +16,13 @@ namespace MezuniyetSistemi.Business.Concrete
     {
         private IUnitOfWork UnitOfWork { get; }
         private IMapper _mapper;
+        private ILoggerService _loggerService;
 
-        public ProfileManager(IUnitOfWork unitOfWork, IMapper mapper)
+        public ProfileManager(IUnitOfWork unitOfWork, IMapper mapper, ILoggerService loggerService)
         {
             UnitOfWork = unitOfWork;
             _mapper = mapper;
+            _loggerService = loggerService;
         }
 
         public void Add(UserProfileDtoForAdd profileDto)
@@ -43,17 +45,13 @@ namespace MezuniyetSistemi.Business.Concrete
 
         public MezuniyetSistemi.Entities.Concrete.UserProfile FindById(int id, bool trackChanges)
         {
-            return UnitOfWork.Profiles.FindByCondition(x=>x.Id == id, trackChanges).SingleOrDefault();
+            UserProfile profile = CheckUserProfileById(id, trackChanges);
+            return profile;
         }
 
         public void Update(int id, UserProfileDtoForUpdate profileDto, bool trackChanges)
         {
-            var profile = UnitOfWork
-                .Profiles
-                .FindByCondition(x=>x.Id == id,trackChanges)
-                .SingleOrDefault();
-            if (profile == null)
-                throw new ArgumentNullException();
+            UserProfile profile = CheckUserProfileById(id, trackChanges);
 
             profile = _mapper.Map<MezuniyetSistemi.Entities.Concrete.UserProfile>(profileDto);
 
@@ -62,6 +60,22 @@ namespace MezuniyetSistemi.Business.Concrete
                 .Update(profile);
 
             UnitOfWork.Save();
+        }
+
+        private UserProfile CheckUserProfileById(int id, bool trackChanges)
+        {
+            var profile = UnitOfWork
+                            .Profiles
+                            .FindByCondition(x => x.Id == id, trackChanges)
+                            .SingleOrDefault();
+            if (profile == null)
+            {
+                string message = $"{id} kayitli bir kullanici bulunamadi!";
+                _loggerService.LogError(message);
+                throw new Exception(message);
+            }
+
+            return profile;
         }
     }
 }

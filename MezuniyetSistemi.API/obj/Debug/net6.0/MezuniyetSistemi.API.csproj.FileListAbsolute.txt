@@ -149,3 +149,6 @@ C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\obj\Debug\net6
 C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\obj\Debug\net6.0\ref\MezuniyetSistemi.API.dll
 C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\bin\Debug\net6.0\nLog.config
+C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\bin\Debug\net6.0\NLog.dll
+C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\bin\Debug\net6.0\NLog.Extensions.Logging.dll

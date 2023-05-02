@@ -1,0 +1,12 @@
+2023-05-03 02:22:55.2372 Info Message Template Auto Format enabled
+2023-05-03 02:22:55.3151 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-03 02:22:55.3386 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-03 02:25:29.1370 Info Message Template Auto Format enabled
+2023-05-03 02:25:29.2108 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-03 02:25:29.2327 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-03 02:28:40.4067 Info Message Template Auto Format enabled
+2023-05-03 02:28:40.4933 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-03 02:28:40.5161 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-03 02:30:19.7257 Info Message Template Auto Format enabled
+2023-05-03 02:30:19.7966 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-03 02:30:19.8271 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
