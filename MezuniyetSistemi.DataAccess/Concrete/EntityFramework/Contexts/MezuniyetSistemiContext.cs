@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MezuniyetSistemi.Entities.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +12,11 @@ namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MezuniyetSistemiDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder
+                .UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=MezuniyetSistemiDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
 
-        public MezuniyetSistemiContext(DbContextOptions<MezuniyetSistemiContext> dbContext) : base(dbContext)
-        {
-            
-        }
+        public DbSet<Profile> Profiles { get; set; }
 
-        public MezuniyetSistemiContext()
-        {
-            
-        }
     }
 }

@@ -9,8 +9,8 @@ namespace MezuniyetSistemi.Business.Abstract
 {
     public interface IProfileService
     {
-        IEnumerable<Profile> FindAll(bool changes);
-        Profile FindById(int id);
+        IList<Profile> FindAll(bool trackChanges);
+        Profile FindById(int id, bool trackChanges);
         void Add(Profile profile);
         void Update(Profile profile);
         void Delete(Profile profile);

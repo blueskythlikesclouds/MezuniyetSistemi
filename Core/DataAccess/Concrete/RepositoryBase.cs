@@ -10,44 +10,45 @@ using System.Threading.Tasks;
 
 namespace Core.DataAccess.Concrete
 {
-    public class RepositoryBase<T,TContext> : IRepositoryBase<T>
+    public class RepositoryBase<T> : IRepositoryBase<T>
         where T : class, IEntity, new()
-        where TContext: DbContext, new()
     {
-        protected readonly TContext _context;
+        protected readonly DbContext _context;
 
-        protected RepositoryBase(TContext context)
+        public RepositoryBase(DbContext context)
         {
             _context = context;
         }
 
         public void Add(T entity)
         {
-            _context.Add(entity);
+            _context.Set<T>().Add(entity);
             _context.SaveChanges();
         }
 
         public void Delete(T entity)
         {
-            _context.Remove(entity);
+            _context.Set<T>().Remove(entity);
             _context.SaveChanges();
         }
 
         public IQueryable<T> FindAll(bool trackChanges)
         {
-            if(trackChanges) 
-                return _context.Set<T>();
-            return _context.Set<T>().AsNoTracking<T>();
+            return trackChanges ?
+                _context.Set<T>() :
+                _context.Set<T>().AsNoTracking();
         }
 
-        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> condition)
+        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges)
         {
-            return _context.Set<T>().Where(condition);
+            return trackChanges ?
+                _context.Set<T>().Where(expression) :
+                _context.Set<T>().Where(expression).AsNoTracking();
         }
 
         public void Update(T entity)
         {
-            _context.Update(entity);
+            _context.Set<T>().Update(entity);
             _context.SaveChanges();
         }
     }

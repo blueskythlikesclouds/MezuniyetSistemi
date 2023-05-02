@@ -1,4 +1,5 @@
 ﻿using MezuniyetSistemi.Business.Abstract;
+using MezuniyetSistemi.Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,6 +14,14 @@ namespace MezuniyetSistemi.API.Controllers
         public ProfilesController(IProfileService profileService)
         {
             _profileService = profileService;
+        }
+
+        [HttpPost]
+        public IActionResult AddProfile([FromBody] Profile profile)
+        {
+            _profileService.Add(profile);
+
+            return Ok();
         }
 
         [HttpGet]
