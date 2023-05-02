@@ -742,7 +742,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.11"
         },
         "compile": {
@@ -1958,7 +1957,7 @@
       "projectName": "MezuniyetSistemi.DataAccess",
       "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\MezuniyetSistemi.DataAccess.csproj",
       "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"

@@ -11,7 +11,7 @@
         "projectName": "Core",
         "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\Core\\obj\\",
+        "outputPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"
@@ -44,16 +44,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.11, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.11, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

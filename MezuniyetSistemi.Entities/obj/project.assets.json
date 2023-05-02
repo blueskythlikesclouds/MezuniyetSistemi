@@ -742,7 +742,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.11"
         },
         "compile": {
@@ -1939,7 +1938,7 @@
       "projectName": "MezuniyetSistemi.Entities",
       "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj",
       "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\obj\\",
+      "outputPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"

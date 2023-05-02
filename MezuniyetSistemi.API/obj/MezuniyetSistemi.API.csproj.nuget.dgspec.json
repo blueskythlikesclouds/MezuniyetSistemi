@@ -11,7 +11,7 @@
         "projectName": "Core",
         "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\Core\\obj\\",
+        "outputPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"
@@ -45,10 +45,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.11, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.11, )"
@@ -128,12 +124,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.11, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -169,7 +159,7 @@
         "projectName": "MezuniyetSistemi.Business",
         "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Business\\MezuniyetSistemi.Business.csproj",
         "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\MezuniyetSistemi.Business\\obj\\",
+        "outputPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"
@@ -236,7 +226,7 @@
         "projectName": "MezuniyetSistemi.DataAccess",
         "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\MezuniyetSistemi.DataAccess.csproj",
         "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"
@@ -303,7 +293,7 @@
         "projectName": "MezuniyetSistemi.Entities",
         "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj",
         "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\obj\\",
+        "outputPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"
