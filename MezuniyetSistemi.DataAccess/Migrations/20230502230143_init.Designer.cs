@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MezuniyetSistemi.DataAccess.Migrations
 {
     [DbContext(typeof(MezuniyetSistemiContext))]
-    [Migration("20230502214711_init")]
+    [Migration("20230502230143_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace MezuniyetSistemi.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("MezuniyetSistemi.Entities.Concrete.Profile", b =>
+            modelBuilder.Entity("MezuniyetSistemi.Entities.Concrete.UserProfile", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -74,7 +74,7 @@ namespace MezuniyetSistemi.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Profiles");
+                    b.ToTable("UserProfiles");
                 });
 #pragma warning restore 612, 618
         }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.DataAccess.Abstract
 {
-    public interface IProfileRepository : IRepositoryBase<Profile>
+    public interface IProfileRepository : IRepositoryBase<UserProfile>
     {
     }
 }

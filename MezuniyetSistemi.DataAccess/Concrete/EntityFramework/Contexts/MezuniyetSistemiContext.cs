@@ -16,7 +16,7 @@ namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts
                 .UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=MezuniyetSistemiDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
 
-        public DbSet<Profile> Profiles { get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
 
     }
 }

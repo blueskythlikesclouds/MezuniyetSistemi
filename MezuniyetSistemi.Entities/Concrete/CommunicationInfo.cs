@@ -9,8 +9,8 @@ namespace MezuniyetSistemi.Entities.Concrete
         public string PhoneNumber { get; set; }
         public string City { get; set; }
 
-        // Commu N - 1 Profile
+        // Commu N - 1 UserProfile
         public int ProfileId { get; set; }
-        public virtual Profile Profile { get; set; }
+        public virtual UserProfile Profile { get; set; }
     }
 }

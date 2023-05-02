@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Repositories
 {
-    public class ProfileRepository : RepositoryBase<Profile>, IProfileRepository
+    public class ProfileRepository : RepositoryBase<UserProfile>, IProfileRepository
     {
         public ProfileRepository(DbContext context) : base(context)
         {

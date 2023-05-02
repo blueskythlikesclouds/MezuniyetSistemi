@@ -6,6 +6,7 @@ using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts;
 using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Repositories;
 using MezuniyetSistemi.Business.Extensions;
 using Microsoft.EntityFrameworkCore;
+using MezuniyetSistemi.Business.Utilities.AutoMapper.Profiles;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.LoadMyServices();
+
+builder.Services.AddAutoMapper(typeof(UserProfileProfile));
 
 var app = builder.Build();
 

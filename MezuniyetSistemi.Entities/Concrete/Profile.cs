@@ -2,7 +2,7 @@
 
 namespace MezuniyetSistemi.Entities.Concrete
 {
-    public class Profile : EntityBase
+    public class UserProfile : EntityBase
     {
         // Duruma gore cikarilabilir
         public int StudentNumber { get; set; }
@@ -11,7 +11,7 @@ namespace MezuniyetSistemi.Entities.Concrete
         public DateTime EntryDate { get; set; }
         public DateTime GraduationDate { get; set; }
 
-        // Department 1 - N Profile
+        // Department 1 - N UserProfile
         //public int DepartmentId { get; set; }
         //public virtual Department Department { get; set; }
 

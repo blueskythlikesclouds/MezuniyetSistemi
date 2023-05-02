@@ -147,3 +147,5 @@ C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\obj\Debug\net6
 C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\obj\Debug\net6.0\MezuniyetSistemi.API.csproj.CopyComplete
 C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\obj\Debug\net6.0\MezuniyetSistemi.API.genruntimeconfig.cache
 C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\obj\Debug\net6.0\ref\MezuniyetSistemi.API.dll
+C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -6,8 +6,8 @@ namespace MezuniyetSistemi.Entities.Concrete
     {
         public string Url { get; set; }
 
-        // Social Media N - 1 Profile
+        // Social Media N - 1 UserProfile
         public int ProfileId { get; set; }
-        public virtual Profile Profile { get; set; }
+        public virtual UserProfile Profile { get; set; }
     }
 }

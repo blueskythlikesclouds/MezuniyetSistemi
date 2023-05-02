@@ -14,6 +14,6 @@ namespace MezuniyetSistemi.Entities.Concrete
         public string Website { get; set; }
 
         //public int ProfileId { get; set; }
-        //public virtual Profile Profile { get; set; }
+        //public virtual UserProfile UserProfile { get; set; }
     }
 }

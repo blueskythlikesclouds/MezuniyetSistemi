@@ -1,11 +1,12 @@
 ﻿using MezuniyetSistemi.Business.Abstract;
 using MezuniyetSistemi.Entities.Concrete;
+using MezuniyetSistemi.Entities.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MezuniyetSistemi.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/profiles")]
     [ApiController]
     public class ProfilesController : ControllerBase
     {
@@ -17,9 +18,17 @@ namespace MezuniyetSistemi.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddProfile([FromBody] Profile profile)
+        public IActionResult AddProfile([FromBody] UserProfileDtoForAdd profileDto)
         {
-            _profileService.Add(profile);
+            _profileService.Add(profileDto);
+
+            return Ok();
+        }
+
+        [HttpPut("{id:int}")]
+        public IActionResult UpdateProfile([FromRoute] int id, [FromBody] UserProfileDtoForUpdate profileDto)
+        {
+            _profileService.Update(id, profileDto, false);
 
             return Ok();
         }
@@ -30,6 +39,14 @@ namespace MezuniyetSistemi.API.Controllers
             var profiles = _profileService.FindAll(false);
 
             return Ok(profiles);
+        }
+
+        [HttpGet("{id:int}")]
+        public IActionResult Get([FromRoute] int id)
+        {
+            var profile = _profileService.FindById(id, false);
+
+            return Ok(profile);
         }
 
     }

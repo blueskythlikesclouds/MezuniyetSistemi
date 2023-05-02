@@ -22,7 +22,7 @@ namespace MezuniyetSistemi.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("MezuniyetSistemi.Entities.Concrete.Profile", b =>
+            modelBuilder.Entity("MezuniyetSistemi.Entities.Concrete.UserProfile", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -72,7 +72,7 @@ namespace MezuniyetSistemi.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Profiles");
+                    b.ToTable("UserProfiles");
                 });
 #pragma warning restore 612, 618
         }

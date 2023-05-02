@@ -4,7 +4,7 @@ namespace MezuniyetSistemi.Entities.Concrete
 {
     public class Message : EntityBase
     {
-        // Message N - N Profile
+        // Message N - N UserProfile
         public string Title { get; set; }
         public string Content { get; set; }
         public string SendDate { get; set; }
