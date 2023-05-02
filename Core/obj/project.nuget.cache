@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bIPzLqAWk42ooWi5CB5zKoebuAnPhXyl3kEHeHVEJuOZCFjvUOtI0u7D0UdXaBEC2wq9ywvNY+rlPzdH2EoD8Q==",
+  "dgSpecHash": "XSG+BB+3bMORRjD2NgWHnGejfgSl5HRaft1mv6x7SXP3yKHMRJvRr+8jYAig61edQb4QQ6nOnV6y8cCrdvo2JA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\np_ba\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\np_ba\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

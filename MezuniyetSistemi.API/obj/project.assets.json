@@ -2272,11 +2272,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.API\\MezuniyetSistemi.API.csproj",
+      "projectUniqueName": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.API\\MezuniyetSistemi.API.csproj",
       "projectName": "MezuniyetSistemi.API",
-      "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.API\\MezuniyetSistemi.API.csproj",
+      "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.API\\MezuniyetSistemi.API.csproj",
       "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.API\\obj\\",
+      "outputPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"
@@ -2298,17 +2298,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\Core\\Core.csproj"
+            "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\Core\\Core.csproj"
             },
-            "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.Business\\MezuniyetSistemi.Business.csproj": {
-              "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.Business\\MezuniyetSistemi.Business.csproj"
+            "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Business\\MezuniyetSistemi.Business.csproj": {
+              "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Business\\MezuniyetSistemi.Business.csproj"
             },
-            "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\MezuniyetSistemi.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\MezuniyetSistemi.DataAccess.csproj"
+            "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\MezuniyetSistemi.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.DataAccess\\MezuniyetSistemi.DataAccess.csproj"
             },
-            "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj": {
-              "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj"
+            "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj": {
+              "projectPath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.Entities\\MezuniyetSistemi.Entities.csproj"
             }
           }
         }
@@ -2353,7 +2353,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

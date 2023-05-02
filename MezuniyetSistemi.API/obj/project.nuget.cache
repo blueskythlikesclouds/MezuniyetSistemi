@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BNctl/g3hOWXvh1XMLqTtLxQCYmkhiTqa+RGL9EOmsbyLMraDTh3H6/xeoKE42cdxPDfJH5qcE0LEImGXPpecg==",
+  "dgSpecHash": "Xeyp5E1Keq9Tx/o1Dap/IQO1I0TZFkfXZdDgGdYlLa8G0RlXFp7Y6NH2OWC/Wqccf7OyAs1bFDxYvp1jFzmewQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\MezuniyetSistemi.API\\MezuniyetSistemi.API.csproj",
+  "projectFilePath": "C:\\Users\\np_ba\\source\\repos\\MezuniyetSistemi\\MezuniyetSistemi.API\\MezuniyetSistemi.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\np_ba\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\np_ba\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -1917,11 +1917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\np_ba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\np_ba\\source\\repos\\ProjeYonetimi\\MezuniyetSistemi\\Core\\obj\\",
+      "outputPath": "C:\\Users\\np_ba\\Source\\Repos\\MezuniyetSistemi\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual Studio\\Visual Studio 2022\\Shared\\NuGetPackages"
@@ -1980,7 +1980,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

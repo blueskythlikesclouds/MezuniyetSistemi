@@ -15,7 +15,13 @@ namespace MezuniyetSistemi.API.Controllers
             _profileService = profileService;
         }
 
+        [HttpGet]
+        public IActionResult GetAll() 
+        {
+            var profiles = _profileService.FindAll(false);
 
+            return Ok(profiles);
+        }
 
     }
 }
