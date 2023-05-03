@@ -1,5 +1,6 @@
 ﻿using Core.DataAccess.Abstract;
 using MezuniyetSistemi.Entities.Concrete;
+using MezuniyetSistemi.Entities.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace MezuniyetSistemi.DataAccess.Abstract
 {
     public interface IProfileRepository : IRepositoryBase<UserProfile>
     {
+        IList<UserProfile> GetAllWithPagination(UserProfileParameters userProfileParameters, bool trackChanges);
     }
 }

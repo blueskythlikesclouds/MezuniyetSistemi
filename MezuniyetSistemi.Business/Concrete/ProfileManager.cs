@@ -4,6 +4,7 @@ using MezuniyetSistemi.DataAccess.Abstract;
 using MezuniyetSistemi.DataAccess.Concrete;
 using MezuniyetSistemi.Entities.Concrete;
 using MezuniyetSistemi.Entities.DTOs;
+using MezuniyetSistemi.Entities.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,6 +77,12 @@ namespace MezuniyetSistemi.Business.Concrete
             }
 
             return profile;
+        }
+
+        public IList<UserProfile> FindAllWithPagination(UserProfileParameters parameters, bool trackChanges)
+        {
+            var profiles = UnitOfWork.Profiles.GetAllWithPagination(parameters, trackChanges);
+            return profiles;
         }
     }
 }

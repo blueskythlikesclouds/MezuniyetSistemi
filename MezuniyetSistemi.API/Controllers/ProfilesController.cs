@@ -1,6 +1,7 @@
 ﻿using MezuniyetSistemi.Business.Abstract;
 using MezuniyetSistemi.Entities.Concrete;
 using MezuniyetSistemi.Entities.DTOs;
+using MezuniyetSistemi.Entities.RequestFeatures;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,10 +34,18 @@ namespace MezuniyetSistemi.API.Controllers
             return Ok();
         }
 
+        //[HttpGet]
+        //public IActionResult GetAll() 
+        //{
+        //    var profiles = _profileService.FindAll(false);
+
+        //    return Ok(profiles);
+        //}
+
         [HttpGet]
-        public IActionResult GetAll() 
+        public IActionResult GetAllWithParams([FromQuery] UserProfileParameters userProfileParameters)
         {
-            var profiles = _profileService.FindAll(false);
+            var profiles = _profileService.FindAllWithPagination(userProfileParameters, false);
 
             return Ok(profiles);
         }
