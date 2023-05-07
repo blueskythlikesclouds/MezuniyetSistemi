@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Core.Entities.Concrete;
 using MezuniyetSistemi.Business.Abstract;
 using MezuniyetSistemi.DataAccess.Abstract;
 using MezuniyetSistemi.DataAccess.Concrete;
@@ -79,7 +80,7 @@ namespace MezuniyetSistemi.Business.Concrete
             return profile;
         }
 
-        public IList<UserProfile> FindAllWithPagination(UserProfileParameters parameters, bool trackChanges)
+        public PagedList<UserProfile> FindAllWithPagination(UserProfileParameters parameters, bool trackChanges)
         {
             var profiles = UnitOfWork.Profiles.GetAllWithPagination(parameters, trackChanges);
             return profiles;

@@ -4,16 +4,17 @@ using MezuniyetSistemi.Entities.DTOs;
 using MezuniyetSistemi.Entities.RequestFeatures;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace MezuniyetSistemi.API.Controllers
 {
-    [Route("api/profiles")]
+    [Route("api/userProfiles")]
     [ApiController]
-    public class ProfilesController : ControllerBase
+    public class UserProfilesController : ControllerBase
     {
         private readonly IProfileService _profileService;
 
-        public ProfilesController(IProfileService profileService)
+        public UserProfilesController(IProfileService profileService)
         {
             _profileService = profileService;
         }
@@ -46,6 +47,7 @@ namespace MezuniyetSistemi.API.Controllers
         public IActionResult GetAllWithParams([FromQuery] UserProfileParameters userProfileParameters)
         {
             var profiles = _profileService.FindAllWithPagination(userProfileParameters, false);
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(profiles.MetaData));
 
             return Ok(profiles);
         }

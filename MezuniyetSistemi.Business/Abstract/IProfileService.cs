@@ -1,4 +1,5 @@
-﻿using MezuniyetSistemi.Entities.Concrete;
+﻿using Core.Entities.Concrete;
+using MezuniyetSistemi.Entities.Concrete;
 using MezuniyetSistemi.Entities.DTOs;
 using MezuniyetSistemi.Entities.RequestFeatures;
 using System;
@@ -12,7 +13,7 @@ namespace MezuniyetSistemi.Business.Abstract
     public interface IProfileService
     {
         IList<UserProfile> FindAll(bool trackChanges);
-        IList<UserProfile> FindAllWithPagination(UserProfileParameters parameters, bool trackChanges);
+        PagedList<UserProfile> FindAllWithPagination(UserProfileParameters parameters, bool trackChanges);
         UserProfile FindById(int id, bool trackChanges);
         void Add(UserProfileDtoForAdd profileDto);
         void Update(int id,UserProfileDtoForUpdate profileDto, bool trackChanges);

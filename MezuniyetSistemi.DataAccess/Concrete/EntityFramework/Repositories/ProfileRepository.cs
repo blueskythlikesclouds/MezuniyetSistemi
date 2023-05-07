@@ -1,5 +1,6 @@
 ﻿using Core.DataAccess.Abstract;
 using Core.DataAccess.Concrete;
+using Core.Entities.Concrete;
 using MezuniyetSistemi.DataAccess.Abstract;
 using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts;
 using MezuniyetSistemi.Entities.Concrete;
@@ -19,10 +20,13 @@ namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Repositories
         {
         }
 
-        public IList<UserProfile> GetAllWithPagination(UserProfileParameters userProfileParameters, bool trackChanges) =>
-            FindAll(trackChanges)
-            .Skip((userProfileParameters.CurrentPage - 1) * userProfileParameters.PageSize)
-            .Take(userProfileParameters.PageSize)
-            .ToList();
+        public PagedList<UserProfile> GetAllWithPagination(UserProfileParameters userProfileParameters, bool trackChanges)
+        {
+            var books = FindAll(trackChanges).ToList();
+
+            return PagedList<UserProfile>
+                .ToPagedList(books, userProfileParameters.CurrentPage, userProfileParameters.PageSize);
+        }
+            
     }
 }
