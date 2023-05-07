@@ -22,7 +22,7 @@ namespace MezuniyetSistemi.Business.Extensions
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-            services.AddScoped<IProfileService, ProfileManager>();
+            services.AddScoped<IUserProfileService, UserProfileManager>();
 
             services.AddSingleton<ILoggerService, LoggerManager>();
 

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.Business.Abstract
 {
-    public interface IProfileService
+    public interface IUserProfileService
     {
         IList<UserProfile> FindAll(bool trackChanges);
         PagedList<UserProfile> FindAllWithPagination(UserProfileParameters parameters, bool trackChanges);

@@ -14,9 +14,9 @@ using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Repositories
 {
-    public class ProfileRepository : RepositoryBase<UserProfile>, IProfileRepository
+    public class UserProfileRepository : RepositoryBase<UserProfile>, IUserProfileRepository
     {
-        public ProfileRepository(DbContext context) : base(context)
+        public UserProfileRepository(DbContext context) : base(context)
         {
         }
 

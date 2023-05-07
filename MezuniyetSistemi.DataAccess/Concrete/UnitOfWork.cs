@@ -12,13 +12,13 @@ namespace MezuniyetSistemi.DataAccess.Concrete
     public class UnitOfWork : IUnitOfWork
     {
         private readonly MezuniyetSistemiContext _context;
-        private ProfileRepository _profileRepository;
+        private UserProfileRepository _profileRepository;
         public UnitOfWork(MezuniyetSistemiContext context)
         {
             _context = context;
         }
 
-        public IProfileRepository Profiles => _profileRepository ?? new ProfileRepository(_context); 
+        public IUserProfileRepository Profiles => _profileRepository ?? new UserProfileRepository(_context); 
 
         public void Dispose()
         {

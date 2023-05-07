@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.DataAccess.Abstract
 {
-    public interface IProfileRepository : IRepositoryBase<UserProfile>
+    public interface IUserProfileRepository : IRepositoryBase<UserProfile>
     {
         PagedList<UserProfile> GetAllWithPagination(UserProfileParameters userProfileParameters, bool trackChanges);
     }

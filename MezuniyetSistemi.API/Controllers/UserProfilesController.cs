@@ -12,9 +12,9 @@ namespace MezuniyetSistemi.API.Controllers
     [ApiController]
     public class UserProfilesController : ControllerBase
     {
-        private readonly IProfileService _profileService;
+        private readonly IUserProfileService _profileService;
 
-        public UserProfilesController(IProfileService profileService)
+        public UserProfilesController(IUserProfileService profileService)
         {
             _profileService = profileService;
         }

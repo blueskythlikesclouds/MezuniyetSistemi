@@ -8,7 +8,7 @@ namespace MezuniyetSistemi.DataAccess.Abstract
 {
     public interface IUnitOfWork : IDisposable
     {
-        IProfileRepository Profiles { get; }
+        IUserProfileRepository Profiles { get; }
         int Save();
     }
 }

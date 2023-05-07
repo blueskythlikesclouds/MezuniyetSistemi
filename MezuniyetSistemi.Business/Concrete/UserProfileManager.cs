@@ -14,13 +14,13 @@ using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.Business.Concrete
 {
-    public class ProfileManager : IProfileService
+    public class UserProfileManager : IUserProfileService
     {
         private IUnitOfWork UnitOfWork { get; }
         private IMapper _mapper;
         private ILoggerService _loggerService;
 
-        public ProfileManager(IUnitOfWork unitOfWork, IMapper mapper, ILoggerService loggerService)
+        public UserProfileManager(IUnitOfWork unitOfWork, IMapper mapper, ILoggerService loggerService)
         {
             UnitOfWork = unitOfWork;
             _mapper = mapper;
