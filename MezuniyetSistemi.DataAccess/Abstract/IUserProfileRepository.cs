@@ -13,5 +13,6 @@ namespace MezuniyetSistemi.DataAccess.Abstract
     public interface IUserProfileRepository : IRepositoryBase<UserProfile>
     {
         PagedList<UserProfile> GetAllWithPagination(UserProfileParameters userProfileParameters, bool trackChanges);
+
     }
 }
