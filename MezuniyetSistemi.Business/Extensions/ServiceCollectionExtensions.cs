@@ -3,6 +3,7 @@ using MezuniyetSistemi.Business.Concrete;
 using MezuniyetSistemi.DataAccess.Abstract;
 using MezuniyetSistemi.DataAccess.Concrete;
 using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts;
+using MezuniyetSistemi.Entities.Concrete;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MezuniyetSistemi.Business.Extensions
@@ -22,6 +23,8 @@ namespace MezuniyetSistemi.Business.Extensions
             services.AddScoped<IEmailService, EMailManager>();
 
             services.AddScoped<ISpecialtyService, SpecialtyManager>();
+
+            services.AddScoped<ICompanyService, CompanyManager>();
 
             return services;
         }

@@ -12,9 +12,8 @@ namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
-
         public DbSet<Email> Emails { get; set; }
         public DbSet<Specialty> Specialties { get; set; }
-
+        public DbSet<Company> Companies { get; set; }
     }
 }

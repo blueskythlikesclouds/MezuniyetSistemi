@@ -10,6 +10,8 @@ namespace MezuniyetSistemi.DataAccess.Concrete
         private UserProfileRepository _profileRepository;
         private EMailRepository _eMailRepository;
         private SpecialtyRepository _specialtyRepository;
+        private CompanyRepository _companyRepository;
+
         public UnitOfWork(MezuniyetSistemiContext context)
         {
             _context = context;
@@ -17,8 +19,8 @@ namespace MezuniyetSistemi.DataAccess.Concrete
 
         public IUserProfileRepository Profiles => _profileRepository ?? new UserProfileRepository(_context);
         public IEMailRepository Emails => _eMailRepository ?? new EMailRepository(_context);
-
         public ISpecialtyRepository Specialties => _specialtyRepository ?? new SpecialtyRepository(_context);
+        public ICompanyRepository Companies => _companyRepository ?? new CompanyRepository(_context);
 
         public void Dispose()
         {
