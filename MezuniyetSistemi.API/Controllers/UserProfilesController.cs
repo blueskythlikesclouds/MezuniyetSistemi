@@ -60,5 +60,11 @@ namespace MezuniyetSistemi.API.Controllers
             return Ok(profile);
         }
 
+        [HttpGet("GlobalHandler")]
+        public IActionResult GlobalHandlerTest()
+        {
+            throw new Exception("Global Hata Yonetimi Testi");
+        }
+
     }
 }
