@@ -13,12 +13,14 @@ namespace MezuniyetSistemi.DataAccess.Concrete
     {
         private readonly MezuniyetSistemiContext _context;
         private UserProfileRepository _profileRepository;
+        private EMailRepository _eMailRepository;
         public UnitOfWork(MezuniyetSistemiContext context)
         {
             _context = context;
         }
 
         public IUserProfileRepository Profiles => _profileRepository ?? new UserProfileRepository(_context); 
+        public IEMailRepository Emails => _eMailRepository ?? new EMailRepository(_context);
 
         public void Dispose()
         {
