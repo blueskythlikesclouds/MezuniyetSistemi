@@ -26,6 +26,8 @@ namespace MezuniyetSistemi.Business.Extensions
 
             services.AddSingleton<ILoggerService, LoggerManager>();
 
+            services.AddScoped<IEmailService, EMailManager>();
+
             return services;
         }
     }

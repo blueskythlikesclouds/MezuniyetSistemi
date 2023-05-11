@@ -27,6 +27,6 @@ namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Repositories
             return PagedList<UserProfile>
                 .ToPagedList(books, userProfileParameters.CurrentPage, userProfileParameters.PageSize);
         }
-            
+
     }
 }
