@@ -21,4 +21,8 @@
     <ProjectReference Include="..\MezuniyetSistemi.Entities\MezuniyetSistemi.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="internal_logs\" />
+  </ItemGroup>
+
 </Project>

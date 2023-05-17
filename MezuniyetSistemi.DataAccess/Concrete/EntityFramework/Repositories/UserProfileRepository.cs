@@ -16,7 +16,7 @@ namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Repositories
 {
     public class UserProfileRepository : RepositoryBase<UserProfile>, IUserProfileRepository
     {
-        public UserProfileRepository(DbContext context) : base(context)
+        public UserProfileRepository(MezuniyetSistemiContext context) : base(context)
         {
         }
 

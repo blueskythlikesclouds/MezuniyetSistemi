@@ -8,6 +8,7 @@ using MezuniyetSistemi.Business.Extensions;
 using Microsoft.EntityFrameworkCore;
 using MezuniyetSistemi.Business.Utilities.AutoMapper.Profiles;
 using NLog;
+using MezuniyetSistemi.API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,9 @@ builder.Services.LoadMyServices();
 builder.Services.AddAutoMapper(typeof(UserProfileProfile));
 
 var app = builder.Build();
+
+var logger = app.Services.GetRequiredService<ILoggerService>();
+app.ConfigureExceptionHandler(logger);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
