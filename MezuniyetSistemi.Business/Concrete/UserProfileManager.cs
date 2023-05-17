@@ -2,15 +2,9 @@
 using Core.Entities.Concrete;
 using MezuniyetSistemi.Business.Abstract;
 using MezuniyetSistemi.DataAccess.Abstract;
-using MezuniyetSistemi.DataAccess.Concrete;
 using MezuniyetSistemi.Entities.Concrete;
 using MezuniyetSistemi.Entities.DTOs;
 using MezuniyetSistemi.Entities.RequestFeatures;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.Business.Concrete
 {

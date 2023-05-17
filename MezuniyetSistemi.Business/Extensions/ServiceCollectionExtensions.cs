@@ -3,14 +3,8 @@ using MezuniyetSistemi.Business.Concrete;
 using MezuniyetSistemi.DataAccess.Abstract;
 using MezuniyetSistemi.DataAccess.Concrete;
 using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts;
-using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Repositories;
-using Microsoft.EntityFrameworkCore;
+using MezuniyetSistemi.Entities.Concrete;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.Business.Extensions
 {
@@ -27,6 +21,10 @@ namespace MezuniyetSistemi.Business.Extensions
             services.AddSingleton<ILoggerService, LoggerManager>();
 
             services.AddScoped<IEmailService, EMailManager>();
+
+            services.AddScoped<ISpecialtyService, SpecialtyManager>();
+
+            services.AddScoped<ICompanyService, CompanyManager>();
 
             return services;
         }

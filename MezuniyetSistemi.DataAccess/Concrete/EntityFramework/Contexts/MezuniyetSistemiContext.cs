@@ -1,10 +1,5 @@
 ﻿using MezuniyetSistemi.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts
 {
@@ -17,8 +12,8 @@ namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
-
         public DbSet<Email> Emails { get; set; }
-
+        public DbSet<Specialty> Specialties { get; set; }
+        public DbSet<Company> Companies { get; set; }
     }
 }

@@ -37,7 +37,6 @@
 2023-05-09 13:57:09.0293 Info Message Template Auto Format enabled
 2023-05-09 13:57:09.1751 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-05-09 13:57:09.2108 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
-<<<<<<< HEAD
 2023-05-09 14:06:58.8719 Info Message Template Auto Format enabled
 2023-05-09 14:06:59.0093 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-05-09 14:06:59.0482 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
@@ -53,7 +52,6 @@
 2023-05-11 21:24:02.9716 Info Message Template Auto Format enabled
 2023-05-11 21:24:03.0710 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-05-11 21:24:03.1066 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
-=======
 2023-05-09 21:41:30.2199 Info Message Template Auto Format enabled
 2023-05-09 21:41:30.5538 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-05-09 21:41:30.5801 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\muhca\Source\Repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
@@ -89,7 +87,6 @@
 2023-05-09 22:33:26.5235 Info Message Template Auto Format enabled
 2023-05-09 22:33:26.6897 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-05-09 22:33:26.7264 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\muhca\Source\Repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
->>>>>>> 29e10130d8c90a1689c14b41d9237754d8d3abe0
 2023-05-11 21:31:55.4435 Info Message Template Auto Format enabled
 2023-05-11 21:31:55.5186 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-05-11 21:31:55.5421 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
@@ -122,3 +119,34 @@
 2023-05-11 21:50:09.8174 Info Message Template Auto Format enabled
 2023-05-11 21:50:09.8904 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-05-11 21:50:09.9125 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\np_ba\source\repos\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-11 22:00:49.5802 Info Message Template Auto Format enabled
+2023-05-11 22:00:49.6420 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-11 22:00:49.6594 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\afurk\Desktop\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-11 22:00:52.2580 Info AppDomain Shutting down. LogFactory closing...
+2023-05-11 22:00:52.2580 Info LogFactory has been closed.
+2023-05-11 22:01:08.8903 Info Message Template Auto Format enabled
+2023-05-11 22:01:09.1414 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-11 22:01:09.1738 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\afurk\Desktop\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-11 22:02:28.1442 Info AppDomain Shutting down. LogFactory closing...
+2023-05-11 22:02:28.1674 Info LogFactory has been closed.
+2023-05-11 22:09:05.2610 Info Message Template Auto Format enabled
+2023-05-11 22:09:05.3018 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-11 22:09:05.3198 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\afurk\Desktop\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-11 22:09:06.0140 Info AppDomain Shutting down. LogFactory closing...
+2023-05-11 22:09:06.0220 Info LogFactory has been closed.
+2023-05-11 22:09:14.9553 Info Message Template Auto Format enabled
+2023-05-11 22:09:14.9949 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-11 22:09:15.0118 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\afurk\Desktop\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-11 22:09:16.6532 Info AppDomain Shutting down. LogFactory closing...
+2023-05-11 22:09:16.6632 Info LogFactory has been closed.
+2023-05-11 22:29:35.1330 Info Message Template Auto Format enabled
+2023-05-11 22:29:35.3018 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-11 22:29:35.3853 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\afurk\Desktop\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-12 01:04:37.2531 Info Message Template Auto Format enabled
+2023-05-12 01:04:37.2922 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-12 01:04:37.3076 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Repositories\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
+2023-05-12 01:04:37.9117 Info AppDomain Shutting down. LogFactory closing...
+2023-05-12 01:04:37.9117 Info LogFactory has been closed.
+2023-05-12 01:06:06.7596 Info Message Template Auto Format enabled
+2023-05-12 01:06:06.8660 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-12 01:06:06.8916 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Repositories\MezuniyetSistemi\MezuniyetSistemi.API\nLog.config
