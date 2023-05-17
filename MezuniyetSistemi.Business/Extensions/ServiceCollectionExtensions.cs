@@ -1,4 +1,5 @@
-﻿using MezuniyetSistemi.Business.Abstract;
+﻿using Core.Utilities.Security.JWT;
+using MezuniyetSistemi.Business.Abstract;
 using MezuniyetSistemi.Business.Concrete;
 using MezuniyetSistemi.DataAccess.Abstract;
 using MezuniyetSistemi.DataAccess.Concrete;
@@ -25,6 +26,12 @@ namespace MezuniyetSistemi.Business.Extensions
             services.AddScoped<ISpecialtyService, SpecialtyManager>();
 
             services.AddScoped<ICompanyService, CompanyManager>();
+
+            services.AddScoped<IUserService, UserManager>();
+
+            services.AddScoped<IAuthService, AuthManager>();
+
+            services.AddScoped<ITokenHelper, JwtHelper>();
 
             return services;
         }

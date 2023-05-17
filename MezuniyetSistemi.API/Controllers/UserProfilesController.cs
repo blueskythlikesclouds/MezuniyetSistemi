@@ -2,6 +2,7 @@
 using MezuniyetSistemi.Entities.Concrete;
 using MezuniyetSistemi.Entities.DTOs;
 using MezuniyetSistemi.Entities.RequestFeatures;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
@@ -44,6 +45,7 @@ namespace MezuniyetSistemi.API.Controllers
         //}
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         public IActionResult GetAllWithParams([FromQuery] UserProfileParameters userProfileParameters)
         {
             var profiles = _profileService.FindAllWithPagination(userProfileParameters, false);

@@ -6,6 +6,7 @@
         IEMailRepository Emails { get; }
         ISpecialtyRepository Specialties { get; }
         ICompanyRepository Companies { get; }
+        IUserRepository Users { get; }
 
         int Save();
     }
