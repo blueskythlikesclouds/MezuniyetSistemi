@@ -1,5 +1,6 @@
 ﻿using Core.Entities.Concrete;
 using Core.Utilities.Security.JWT;
+using MezuniyetSistemi.Entities.ComplexTypes;
 using MezuniyetSistemi.Entities.DTOs;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace MezuniyetSistemi.Business.Abstract
 {
     public interface IAuthService
     {
-        User Register(UserForRegisterDto userForRegisterDto);
+        User Register(UserForRegisterDto userForRegisterDto, UserRoles role);
         User Login(UserForLoginDto loginDto);
         AccessToken CreateAccessToken(User user);
         bool UserExists(string email);

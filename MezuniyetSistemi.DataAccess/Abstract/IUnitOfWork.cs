@@ -7,6 +7,7 @@
         ISpecialtyRepository Specialties { get; }
         ICompanyRepository Companies { get; }
         IUserRepository Users { get; }
+        IUserOperationClaimRepository UserOperationClaims { get; }
 
         int Save();
     }

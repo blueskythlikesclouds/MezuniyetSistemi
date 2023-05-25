@@ -3,6 +3,7 @@ using Core.Utilities.Security.Hashing;
 using Core.Utilities.Security.JWT;
 using MezuniyetSistemi.Business.Abstract;
 using MezuniyetSistemi.DataAccess.Abstract;
+using MezuniyetSistemi.Entities.ComplexTypes;
 using MezuniyetSistemi.Entities.DTOs;
 using System;
 using System.Collections.Generic;
@@ -35,7 +36,7 @@ namespace MezuniyetSistemi.Business.Concrete
             return user;
         }
 
-        public User Register(UserForRegisterDto userForRegisterDto)
+        public User Register(UserForRegisterDto userForRegisterDto, UserRoles role)
         {
             byte[] passwordHash, passwordSalt;
             HashingHelper.CreatePasswordHash(userForRegisterDto.Password, out passwordHash, out passwordSalt);
@@ -48,6 +49,21 @@ namespace MezuniyetSistemi.Business.Concrete
                 IsActive = true
             };
             UnitOfWork.Users.Add(user);
+            UnitOfWork.Save();
+            UnitOfWork.UserOperationClaims.Add(new()
+            {
+                UserId = user.Id,
+                OperationClaimId = (int)role
+            });
+            UnitOfWork.Profiles.Add(new()
+            {
+                UserId = user.Id,
+                FirstName = userForRegisterDto.FirstName,
+                LastName = userForRegisterDto.LastName,
+                IsDeleted = false,
+                IsActive = true,
+                StudentNumber = 191118015,
+            });
             UnitOfWork.Save();
             return user;
         }

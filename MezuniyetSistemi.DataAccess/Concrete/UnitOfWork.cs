@@ -12,6 +12,7 @@ namespace MezuniyetSistemi.DataAccess.Concrete
         private SpecialtyRepository _specialtyRepository;
         private CompanyRepository _companyRepository;
         private UserRepository _userRepository;
+        private UserOperationClaimRepository _userOperationClaimRepository;
 
         public UnitOfWork(MezuniyetSistemiContext context)
         {
@@ -24,6 +25,8 @@ namespace MezuniyetSistemi.DataAccess.Concrete
         public ICompanyRepository Companies => _companyRepository ?? new CompanyRepository(_context);
 
         public IUserRepository Users => _userRepository ?? new UserRepository(_context);
+
+        public IUserOperationClaimRepository UserOperationClaims => _userOperationClaimRepository ?? new UserOperationClaimRepository(_context);
 
         public void Dispose()
         {

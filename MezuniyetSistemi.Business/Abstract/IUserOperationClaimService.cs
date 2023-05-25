@@ -8,11 +8,8 @@ using System.Threading.Tasks;
 
 namespace MezuniyetSistemi.Business.Abstract
 {
-    public interface IUserService
+    public interface IUserOperationClaimService
     {
-        List<OperationClaim> GetClaims(User user);
-        void Add(User user);
-        void AddUser(User user, UserRoles role);
-        User GetByMail(string email);
+        void Add(int userId, UserRoles role);
     }
 }

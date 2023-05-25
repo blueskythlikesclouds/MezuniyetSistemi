@@ -35,7 +35,7 @@ namespace MezuniyetSistemi.API.Controllers
             if (checkUser)
                 return BadRequest("Bu maile ait kullanici bulunmaktadir!");
 
-            var registerResult = _authService.Register(userForRegisterDto);
+            var registerResult = _authService.Register(userForRegisterDto, Entities.ComplexTypes.UserRoles.User);
             var result = _authService.CreateAccessToken(registerResult);
             if (result == null)
                 return BadRequest("Bir hata olustu");

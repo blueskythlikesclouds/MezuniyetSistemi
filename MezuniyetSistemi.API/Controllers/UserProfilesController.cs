@@ -45,7 +45,7 @@ namespace MezuniyetSistemi.API.Controllers
         //}
 
         [HttpGet]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin, moderator")]
         public IActionResult GetAllWithParams([FromQuery] UserProfileParameters userProfileParameters)
         {
             var profiles = _profileService.FindAllWithPagination(userProfileParameters, false);
@@ -60,6 +60,16 @@ namespace MezuniyetSistemi.API.Controllers
             var profile = _profileService.FindById(id, false);
 
             return Ok(profile);
+        }
+
+        [HttpDelete("{id:int}")]
+        public IActionResult Delete([FromRoute] int id)
+        {
+            var profile = _profileService.FindById(id, true);
+            if (profile == null)
+                return BadRequest();
+            _profileService.Delete(profile);
+            return NoContent();
         }
 
         [HttpGet("GlobalHandler")]
