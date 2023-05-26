@@ -11,6 +11,7 @@ namespace MezuniyetSistemi.API.Controllers
 {
     [Route("api/userProfiles")]
     [ApiController]
+    [Authorize(Roles = "admin,user")]
     public class UserProfilesController : ControllerBase
     {
         private readonly IUserProfileService _profileService;
@@ -45,7 +46,6 @@ namespace MezuniyetSistemi.API.Controllers
         //}
 
         [HttpGet]
-        [Authorize(Roles = "admin, moderator")]
         public IActionResult GetAllWithParams([FromQuery] UserProfileParameters userProfileParameters)
         {
             var profiles = _profileService.FindAllWithPagination(userProfileParameters, false);
