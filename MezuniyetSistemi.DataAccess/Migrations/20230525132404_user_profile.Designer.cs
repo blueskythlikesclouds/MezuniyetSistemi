@@ -4,6 +4,7 @@ using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MezuniyetSistemi.DataAccess.Migrations
 {
     [DbContext(typeof(MezuniyetSistemiContext))]
-    partial class MezuniyetSistemiContextModelSnapshot : ModelSnapshot
+    [Migration("20230525132404_user_profile")]
+    partial class user_profile
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

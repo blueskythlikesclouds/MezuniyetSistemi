@@ -18,7 +18,11 @@ namespace MezuniyetSistemi.API.Extensions
                     var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
                     if (contextFeature != null)
                     {
-
+                        context.Response.StatusCode = contextFeature.Error switch
+                        {
+                            UnauthorizedAccessException => StatusCodes.Status401Unauthorized,
+                            _ => StatusCodes.Status500InternalServerError
+                        };
                         logger.LogError($"Something went wrong: {contextFeature.Error}");
                         await context.Response.WriteAsync(new ErrorDetails()
                         {

@@ -1,4 +1,5 @@
-﻿using MezuniyetSistemi.Entities.Concrete;
+﻿using Core.Entities.Concrete;
+using MezuniyetSistemi.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 
 namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts
@@ -15,5 +16,10 @@ namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<Email> Emails { get; set; }
         public DbSet<Specialty> Specialties { get; set; }
         public DbSet<Company> Companies { get; set; }
+
+        // Auth
+        public DbSet<User> Users { get; set; }
+        public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace MezuniyetSistemi.Entities.DTOs
         [DisplayName("Id")]
         [Required(ErrorMessage = "{0} alani boş geçilmemelidir.")]
         public int Id { get; init; }
+        public int UserId { get; set; }
 
         [DisplayName("Ogrenci Numarasi")]
         [Required(ErrorMessage = "{0} alani boş geçilmemelidir.")]

@@ -49,11 +49,11 @@ namespace MezuniyetSistemi.Business.Concrete
         {
             UserProfile profile = CheckUserProfileById(id, trackChanges);
 
-            profile = _mapper.Map<MezuniyetSistemi.Entities.Concrete.UserProfile>(profileDto);
+            var mappedProfile = _mapper.Map<UserProfileDtoForUpdate, MezuniyetSistemi.Entities.Concrete.UserProfile>(profileDto, profile);
 
             UnitOfWork
                 .Profiles
-                .Update(profile);
+                .Update(mappedProfile);
 
             UnitOfWork.Save();
         }

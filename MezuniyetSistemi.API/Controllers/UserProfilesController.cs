@@ -2,6 +2,7 @@
 using MezuniyetSistemi.Entities.Concrete;
 using MezuniyetSistemi.Entities.DTOs;
 using MezuniyetSistemi.Entities.RequestFeatures;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
@@ -10,6 +11,7 @@ namespace MezuniyetSistemi.API.Controllers
 {
     [Route("api/userProfiles")]
     [ApiController]
+    [Authorize(Roles = "admin,user")]
     public class UserProfilesController : ControllerBase
     {
         private readonly IUserProfileService _profileService;
@@ -58,6 +60,16 @@ namespace MezuniyetSistemi.API.Controllers
             var profile = _profileService.FindById(id, false);
 
             return Ok(profile);
+        }
+
+        [HttpDelete("{id:int}")]
+        public IActionResult Delete([FromRoute] int id)
+        {
+            var profile = _profileService.FindById(id, true);
+            if (profile == null)
+                return BadRequest();
+            _profileService.Delete(profile);
+            return NoContent();
         }
 
         [HttpGet("GlobalHandler")]
