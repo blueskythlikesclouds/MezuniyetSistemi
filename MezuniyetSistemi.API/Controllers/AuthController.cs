@@ -10,10 +10,12 @@ namespace MezuniyetSistemi.API.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
+        private readonly IUserProfileService _userProfileService;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IAuthService authService, IUserProfileService userProfileService)
         {
             _authService = authService;
+            _userProfileService = userProfileService;
         }
 
         [HttpPost("login")]
@@ -25,6 +27,8 @@ namespace MezuniyetSistemi.API.Controllers
             //}
             var user = _authService.Login(userForLoginDto);
             var accessToken = _authService.CreateAccessToken(user);
+            var userProfile = _userProfileService.GetByUserId(user.Id, false);
+            accessToken.UserProfileId = userProfile.Id;
             return Ok(accessToken);
         }
 
