@@ -11,7 +11,7 @@ namespace MezuniyetSistemi.API.Controllers
 {
     [Route("api/userProfiles")]
     [ApiController]
-    [Authorize(Roles = "admin,user")]
+    [Authorize]
     public class UserProfilesController : ControllerBase
     {
         private readonly IUserProfileService _profileService;

@@ -13,6 +13,7 @@ namespace MezuniyetSistemi.Business.Abstract
         void Add(UserProfileDtoForAdd profileDto);
         void Update(int id, UserProfileDtoForUpdate profileDto, bool trackChanges);
         void Delete(UserProfile profile);
+        UserProfile GetByUserId(int userId, bool trackChanges);
     }
 
 }

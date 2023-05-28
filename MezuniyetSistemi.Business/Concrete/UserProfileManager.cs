@@ -24,6 +24,11 @@ namespace MezuniyetSistemi.Business.Concrete
         public void Add(UserProfileDtoForAdd profileDto)
         {
             var profile = _mapper.Map<MezuniyetSistemi.Entities.Concrete.UserProfile>(profileDto);
+            var result = CheckUserProfileByUserId(profileDto.UserId, false);
+            if(result)
+            {
+                throw new Exception($"userId: {profileDto.UserId} kullanıcısı kayıtlıdır. Lütfen güncelleme işlemini deneyiniz!");
+            }
             UnitOfWork.Profiles.Add(profile);
             UnitOfWork.Save();
         }
@@ -73,11 +78,37 @@ namespace MezuniyetSistemi.Business.Concrete
 
             return profile;
         }
+        private bool CheckUserProfileByUserId(int userId, bool trackChanges)
+        {
+            var profile = UnitOfWork
+                            .Profiles
+                            .FindByCondition(x => x.UserId == userId, trackChanges)
+                            .SingleOrDefault();
+            if (profile == null)
+            {
+                return false;
+            }
+
+            return true;
+        }
 
         public PagedList<UserProfile> FindAllWithPagination(UserProfileParameters parameters, bool trackChanges)
         {
             var profiles = UnitOfWork.Profiles.GetAllWithPagination(parameters, trackChanges);
             return profiles;
+        }
+
+        public UserProfile GetByUserId(int userId, bool trackChanges)
+        {
+            var result = CheckUserProfileByUserId (userId, trackChanges);
+            if (!result)
+                throw new Exception($"userId: {userId} kullanici bulunamadi!");
+            var profile = UnitOfWork
+                            .Profiles
+                            .FindByCondition(x => x.UserId == userId, trackChanges)
+                            .SingleOrDefault();
+
+            return profile;
         }
     }
 }

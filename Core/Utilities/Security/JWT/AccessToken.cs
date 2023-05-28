@@ -8,6 +8,7 @@ namespace Core.Utilities.Security.JWT
 {
     public class AccessToken
     {
+        public int UserProfileId { get; set; }
         // Sifrelenmis jwt token degeri
         public string Token { get; set; }
         // Gecerlilik tarihi
