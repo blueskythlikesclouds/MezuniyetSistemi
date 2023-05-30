@@ -6,5 +6,7 @@ namespace MezuniyetSistemi.Entities.Concrete
     {
         public string Ability { get; set; }
         public string Level { get; set; }
+        public int UserProfileId { get; set; }
+        public virtual UserProfile? UserProfile { get; set; }
     }
 }

@@ -22,11 +22,17 @@ namespace MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Repositories
 
         public PagedList<UserProfile> GetAllWithPagination(UserProfileParameters userProfileParameters, bool trackChanges)
         {
-            var books = FindAll(trackChanges).ToList();
+            var userProfiles = FindAll(trackChanges).ToList();
 
             return PagedList<UserProfile>
-                .ToPagedList(books, userProfileParameters.CurrentPage, userProfileParameters.PageSize);
+                .ToPagedList(userProfiles, userProfileParameters.CurrentPage, userProfileParameters.PageSize);
         }
 
+        public List<UserProfile> GetWithSpecialityAndCompanies(int id, bool trackChanges)
+        {
+            var userProfile = FindByCondition(x => x.Id == id, trackChanges)
+                .Include(x=>x.Specialties).Include(x=>x.Companies).ToList();
+            return userProfile;
+        }
     }
 }

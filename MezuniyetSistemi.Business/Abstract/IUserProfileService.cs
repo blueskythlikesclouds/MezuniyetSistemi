@@ -10,6 +10,7 @@ namespace MezuniyetSistemi.Business.Abstract
         IList<UserProfile> FindAll(bool trackChanges);
         PagedList<UserProfile> FindAllWithPagination(UserProfileParameters parameters, bool trackChanges);
         UserProfile FindById(int id, bool trackChanges);
+        UserProfile FindByIdWithAllProp(int id, bool trackChanges);
         void Add(UserProfileDtoForAdd profileDto);
         void Update(int id, UserProfileDtoForUpdate profileDto, bool trackChanges);
         void Delete(UserProfile profile);

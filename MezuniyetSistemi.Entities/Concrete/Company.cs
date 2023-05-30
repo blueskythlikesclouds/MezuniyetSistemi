@@ -5,6 +5,8 @@ namespace MezuniyetSistemi.Entities.Concrete
     public class Company : EntityBase
     {
         public string Name { get; set; }
+        public int UserProfileId { get; set; }
+        public virtual UserProfile? UserProfile { get; set; }
         public string Description { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
@@ -12,8 +14,5 @@ namespace MezuniyetSistemi.Entities.Concrete
         public string Phone { get; set; }
         public string Email { get; set; }
         public string Website { get; set; }
-
-        //public int ProfileId { get; set; }
-        //public virtual UserProfile UserProfile { get; set; }
     }
 }

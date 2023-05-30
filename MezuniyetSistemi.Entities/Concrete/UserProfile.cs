@@ -23,8 +23,7 @@ namespace MezuniyetSistemi.Entities.Concrete
 
         //public virtual ICollection<Image> Images { get; set; }
 
-        //public virtual ICollection<Specialty> Specialties { get; set; }
-
-        //public virtual ICollection<Company> Companies { get; set; }
+        public virtual ICollection<Company>? Companies { get; set; }
+        public virtual ICollection<Specialty>? Specialties { get; set; }
     }
 }
