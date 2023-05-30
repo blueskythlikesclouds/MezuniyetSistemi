@@ -4,6 +4,7 @@ using MezuniyetSistemi.DataAccess.Concrete.EntityFramework.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MezuniyetSistemi.DataAccess.Migrations
 {
     [DbContext(typeof(MezuniyetSistemiContext))]
-    partial class MezuniyetSistemiContextModelSnapshot : ModelSnapshot
+    [Migration("20230530151616_userprofile_specialty")]
+    partial class userprofile_specialty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -165,16 +167,11 @@ namespace MezuniyetSistemi.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserProfileId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Website")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UserProfileId");
 
                     b.ToTable("Companies");
                 });
@@ -333,17 +330,6 @@ namespace MezuniyetSistemi.DataAccess.Migrations
                     b.ToTable("UserProfiles");
                 });
 
-            modelBuilder.Entity("MezuniyetSistemi.Entities.Concrete.Company", b =>
-                {
-                    b.HasOne("MezuniyetSistemi.Entities.Concrete.UserProfile", "UserProfile")
-                        .WithMany("Companies")
-                        .HasForeignKey("UserProfileId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("UserProfile");
-                });
-
             modelBuilder.Entity("MezuniyetSistemi.Entities.Concrete.Specialty", b =>
                 {
                     b.HasOne("MezuniyetSistemi.Entities.Concrete.UserProfile", "UserProfile")
@@ -368,8 +354,6 @@ namespace MezuniyetSistemi.DataAccess.Migrations
 
             modelBuilder.Entity("MezuniyetSistemi.Entities.Concrete.UserProfile", b =>
                 {
-                    b.Navigation("Companies");
-
                     b.Navigation("Specialties");
                 });
 #pragma warning restore 612, 618

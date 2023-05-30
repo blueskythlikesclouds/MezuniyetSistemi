@@ -110,5 +110,28 @@ namespace MezuniyetSistemi.Business.Concrete
 
             return profile;
         }
+
+        public UserProfile FindByIdWithAllProp(int id, bool trackChanges)
+        {
+            var result = CheckUser(id);
+            if (result)
+            {
+                var profile = UnitOfWork
+                    .Profiles
+                    .GetWithSpecialityAndCompanies(id, trackChanges).FirstOrDefault();
+                return profile;
+            }
+
+            throw new Exception("Beklenmeyen bir hata ile karşılaşıldı!");
+        }
+
+        private bool CheckUser(int id)
+        {
+            var profile = UnitOfWork.Profiles.FindByCondition(x=>x.Id==id, false);
+            if (profile == null)
+                throw new Exception("Verilen parametrede kayıt bulunamadı!");
+
+            return true;
+        }
     }
 }

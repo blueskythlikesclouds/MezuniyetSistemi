@@ -57,7 +57,7 @@ namespace MezuniyetSistemi.API.Controllers
         [HttpGet("{id:int}")]
         public IActionResult Get([FromRoute] int id)
         {
-            var profile = _profileService.FindById(id, false);
+            var profile = _profileService.FindByIdWithAllProp(id, false);
 
             return Ok(profile);
         }
