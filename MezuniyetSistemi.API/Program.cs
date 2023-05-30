@@ -24,7 +24,7 @@ LogManager.LoadConfiguration(Path.Combine(Directory.GetCurrentDirectory(), "nLog
 
 builder.Services.AddControllers().AddJsonOptions(options=>
 {
-    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
 });
 
 var tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<TokenOptions>();
